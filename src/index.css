@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.main-container {
+  min-height: calc(100vh - 185px - 65px);
+}
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+.radio-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-image {
+  background: grey;
+  height: 400px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
